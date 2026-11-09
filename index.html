@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Renu – Technical Writing Portfolio</title>
+<style>
+:root{--bg:#fff;--ink:#37352f;--muted:#787774;--line:#e9e9e7;--hover:#f1f1ef;--callout:#f1f6f8;--cover:#126a80;--link:#126a80;--t1:#ddebf1;--t2:#e8deee;--t3:#fbf3db;--t4:#ddedea;--t5:#fadec9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#191919;--ink:#e6e6e4;--muted:#9b9a97;--line:#2f2f2f;--hover:#252525;--callout:#1f2a2e;--cover:#0e4a59;--link:#6cc3d8;--t1:#1f3a46;--t2:#352b3d;--t3:#40371d;--t4:#1f3a35;--t5:#47301f}}
+:root[data-theme="dark"]{--bg:#191919;--ink:#e6e6e4;--muted:#9b9a97;--line:#2f2f2f;--hover:#252525;--callout:#1f2a2e;--cover:#0e4a59;--link:#6cc3d8;--t1:#1f3a46;--t2:#352b3d;--t3:#40371d;--t4:#1f3a35;--t5:#47301f}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+a{color:var(--link)}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--link);outline-offset:2px;border-radius:4px}
+.cover{height:200px;background:var(--cover);background-image:linear-gradient(135deg,rgba(255,255,255,.08) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.08) 50%,rgba(255,255,255,.08) 75%,transparent 75%);background-size:28px 28px}
+.page{max-width:760px;margin:0 auto;padding:0 24px 80px}
+.icon{display:block;width:120px;height:120px;margin-top:-60px;border-radius:50%;object-fit:cover;border:4px solid var(--bg);background:var(--bg)}
+h1{font-size:2.6rem;line-height:1.15;margin:12px 0 4px;font-weight:700}
+.sub{color:var(--muted);margin:0 0 20px;font-size:1.05rem}
+.props{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0;margin:0 0 20px}
+.props div{display:grid;grid-template-columns:130px 1fr;padding:5px 0;font-size:.95rem}
+.props dt,.props dd{margin:0}.props dt{color:var(--muted)}
+.callout{display:flex;gap:12px;background:var(--callout);border-radius:6px;padding:16px 18px;margin:0 0 24px}
+.callout span{font-size:1.4rem;line-height:1.4}.callout p{margin:0}
+.toc{margin:0 0 8px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 16px}
+.toc a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.toc a:hover{color:var(--ink)}
+h2{font-size:1.65rem;margin:44px 0 12px;padding-top:12px;border-top:1px solid var(--line);font-weight:600}
+h3{font-size:1.15rem;margin:0}
+details{border-radius:6px;margin:0 0 6px}
+summary{cursor:pointer;padding:8px 6px;list-style:none;display:flex;align-items:baseline;gap:10px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--muted);transition:transform .15s;display:inline-block;width:1em}
+details[open]>summary::before{transform:rotate(90deg)}
+summary:hover{background:var(--hover)}
+summary b{font-weight:600;font-size:1.05rem}
+summary small{color:var(--muted);margin-left:auto;white-space:nowrap}
+.body{padding:2px 6px 14px 32px}
+.body ul{margin:6px 0 0;padding-left:1.2em}.body li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0}
+.tag{padding:1px 9px;border-radius:4px;font-size:.88rem}
+.g{margin:0 0 18px}.g h3{margin:0 0 2px;font-size:1rem}
+.t1{background:var(--t1)}.t2{background:var(--t2)}.t3{background:var(--t3)}.t4{background:var(--t4)}.t5{background:var(--t5)}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;padding:8px 10px;border:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:500;background:var(--hover)}
+.wrapx{overflow-x:auto}
+.tl{list-style:none;margin:0;padding:0 0 0 16px;border-left:2px solid var(--line)}
+.tl li{margin:0 0 14px;position:relative}
+.tl li::before{content:"";position:absolute;left:-23px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--cover);border:2px solid var(--bg)}
+.tl span{color:var(--muted);display:block;font-size:.9rem}
+footer{color:var(--muted);font-size:.9rem;margin-top:48px}
+@media (max-width:600px){h1{font-size:2.1rem}.props div{grid-template-columns:100px 1fr}summary{flex-wrap:wrap}summary small{margin-left:26px;width:100%}}
+</style>
+</head>
+<body>
+<div class="cover" aria-hidden="true"></div>
+<main class="page">
+<img class="icon" src="data:image/jpeg;base64,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" alt="Photo of Renu" width="120" height="120">
+<h1>Renu</h1>
+<p class="sub">Technical Writer and Final Reviewer · Bengaluru</p>
+
+<dl class="props">
+<div><dt>Experience</dt><dd>4.25 years</dd></div>
+<div><dt>Focus</dt><dd>Software and hardware documentation</dd></div>
+<div><dt>Email</dt><dd><a href="mailto:renukamboz1@gmail.com">renukamboz1@gmail.com</a></dd></div>
+<div><dt>Phone</dt><dd><a href="tel:+919017299774">9017299774</a></dd></div>
+</dl>
+
+<div class="callout"><span aria-hidden="true">💡</span><p>I write and review technical documentation for software and hardware applications. I work in XML/DITA and structured authoring, follow the documentation development life cycle (DDLC), and apply Simplified Technical English (STE) so manuals are clear, consistent and compliant.</p></div>
+
+<ul class="toc"><li><a href="#overview">Overview</a></li><li><a href="#work">Work history</a></li><li><a href="#skills">Skills</a></li><li><a href="#tools">Tools</a></li><li><a href="#education">Education</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#contact">Contact</a></li></ul>
+
+<h2 id="overview">Overview</h2>
+<div class="g"><h3>What I produce</h3>
+<div class="tags"><span class="tag t1">User manuals</span><span class="tag t1">User guides</span><span class="tag t1">How-to guides</span><span class="tag t1">Installation guides</span><span class="tag t1">Technical manuals</span><span class="tag t1">Training materials</span></div></div>
+<div class="g"><h3>How I work</h3>
+<div class="tags"><span class="tag t2">Requirement analysis</span><span class="tag t2">Information gathering</span><span class="tag t2">SME collaboration</span><span class="tag t2">Final validation</span><span class="tag t2">Quality assurance</span></div></div>
+
+<h2 id="work">Work history</h2>
+<details open><summary><b>Technical Writer and Final Reviewer · Sonovision</b><small>07/2026 – Present</small></summary>
+<div class="body"><ul>
+<li>Review and refine technical documentation for accuracy, clarity, completeness, consistency and compliance with documentation standards.</li>
+<li>Proofread and run quality assurance reviews of technical manuals against customer requirements, style guidelines and quality criteria.</li>
+<li>Work with technical teams and subject matter experts to gather information, clarify concepts and resolve documentation queries.</li>
+<li>Maintain documents with MS Office tools, keeping structure, formatting and presentation consistent.</li>
+<li>Apply STE principles to improve readability and terminology consistency.</li>
+<li>Manage several review activities at once while meeting timelines, KPIs and quality requirements.</li>
+</ul></div></details>
+<details><summary><b>Technical Writer and Final Reviewer · Capgemini</b><small>01/2025 – 07/2026</small></summary>
+<div class="body"><ul>
+<li>Analysed customer requirements and source information to write how-to guides, user manuals and internal training documentation for Airbus applications.</li>
+<li>Performed document reviews and final validation of technical accuracy, completeness and formatting, and checked compliance with Airbus quality and safety requirements.</li>
+<li>Developed training materials and presentations with MS Office tools.</li>
+<li>Ran final content reviews using STE principles for clear, concise and consistent communication.</li>
+<li>Coordinated deliverables against project schedules, customer expectations and KPIs.</li>
+</ul></div></details>
+<details><summary><b>Technical Writer and Proofreader · Cades Studec Technologies India</b><small>06/2022 – 01/2025</small></summary>
+<div class="body"><ul>
+<li>Analysed engineering source data to support accurate, structured technical manuals.</li>
+<li>Collaborated with data engineers and subject matter experts to clarify product concepts.</li>
+<li>Used Arbortext Editor and Airbus applications for structured authoring.</li>
+<li>Organised documentation information in MS Excel to support project activities.</li>
+<li>Proofread and reviewed content using STE principles.</li>
+</ul></div></details>
+
+<h2 id="skills">Skills</h2>
+<div class="g"><h3>Technical documentation</h3><p>User manuals, user guides, how-to guides, technical manuals, training materials, software product documentation, documentation maintenance.</p></div>
+<div class="g"><h3>Structured authoring</h3><p>XML/DITA, topic-based authoring, content reuse, Information Mapping, Simplified Technical English (STE).</p></div>
+<div class="g"><h3>Documentation lifecycle and quality</h3><p>Requirement analysis, information gathering, content review, proofreading, validation, content consistency, quality assurance, DDLC, SDLC.</p></div>
+<div class="g"><h3>Collaboration and delivery</h3><p>Cross-functional collaboration, SME coordination, technical communication, task prioritisation, multitasking, deadline management.</p></div>
+
+<h2 id="tools">Tools</h2>
+<div class="tags"><span class="tag t3">Arbortext Editor</span><span class="tag t3">Adobe Acrobat Pro</span><span class="tag t4">MS Word</span><span class="tag t4">MS PowerPoint</span><span class="tag t4">MS Excel</span><span class="tag t4">MS Outlook</span><span class="tag t5">IsoDraw</span><span class="tag t5">TechSmith Snagit</span><span class="tag t5">MS Paint</span><span class="tag t2">MadCap Flare (trained)</span></div>
+
+<h2 id="education">Education</h2>
+<div class="wrapx"><table>
+<tr><th>Qualification</th><th>Institution</th><th>Completed</th></tr>
+<tr><td>M.Tech, Computer Science</td><td>Chaudhary Devi Lal University, Sirsa, Haryana</td><td>01/2026</td></tr>
+<tr><td>AME (Mechanical)</td><td>Star Aviation Academy, Gurugram</td><td>01/2021</td></tr>
+</table></div>
+
+<h2 id="timeline">Timeline</h2>
+<ul class="tl">
+<li><b>Sonovision</b><span>07/2026 – Present · Technical Writer and Final Reviewer</span></li>
+<li><b>Capgemini</b><span>01/2025 – 07/2026 · Technical Writer and Final Reviewer</span></li>
+<li><b>Cades Studec Technologies India</b><span>06/2022 – 01/2025 · Technical Writer and Proofreader</span></li>
+<li><b>M.Tech, Computer Science</b><span>Completed 01/2026</span></li>
+<li><b>AME (Mechanical)</b><span>Completed 01/2021</span></li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+<p>Email: <a href="mailto:renukamboz1@gmail.com">renukamboz1@gmail.com</a><br>Phone: <a href="tel:+919017299774">9017299774</a><br>Location: Bengaluru</p>
+<footer>Renu · Technical Writer</footer>
+</main>
+</body>
+</html>
